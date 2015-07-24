@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html ng-app="depict" ng-controller="CategoryController">
+<html ng-app="depict" ng-controller="CategoriesController">
 	<head>
-		<title>Depict | {{category}}</title>
+		<title>Depict | Categories</title>
 
 		<!-- Scripts Start -->
 
 			<!-- Javascript Start -->
 				<script src="../Javascript/ThirdParty/angular.min.js"></script>
-				<script src="../Javascript//CategoryController.js"></script>
+				<script src="../Javascript//CategoriesController.js"></script>
 			<!-- Javascript End -->
 
 			<!-- CSS Start -->
@@ -19,12 +19,13 @@
 	</head>
 	<body>
 
-		<h1>{{category}}</h1>
+    <h1>Categories</h1>
 
-		<ul>
-			<li>This is the first item.</li>
-			<li>This is the second item.</li>
-		</ul>
+    <div data-ng-repeat="category in categories">
+      <ul>
+        <li><a href="Category.html?category={{category}}">{{category}}</a></li>
+      </ul>
+    </div>
 
 	</body>
 </html>

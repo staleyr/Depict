@@ -1,7 +1,7 @@
 var myApp = angular.module('depict',[]);
 
 myApp.controller('CategoryController', ['$scope', function($scope) {
-	
+
   function querySt(Key) {
     var url = window.location.href;
     KeysValues = url.split(/[\?&]+/);
@@ -12,8 +12,8 @@ myApp.controller('CategoryController', ['$scope', function($scope) {
         }
     }
   }
-  
+
   // $scope.double = function(value) { return value * 2; };
   $scope.category = querySt('category');
-  
+
 }]);
