@@ -6,11 +6,11 @@
       <ul>\
         <li><a href="Index.html">Home</a></li>\
   			<li><a href="Categories.html">Categories</a></li>\
-  			<li><a href="#">Depicts</a></li>\
+  			<li><a href="#">Top Chart</a></li>\
       </ul>\
       \
       ');
-      
+
       $("#footer").append('\
       \
       <ul>\
@@ -19,5 +19,5 @@
       </ul>\
       \
       ');
-      
+
   });
