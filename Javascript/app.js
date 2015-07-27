@@ -4,7 +4,7 @@
 
 	app.config(function($routeProvider) {
 		$routeProvider
-			.when("/Index", {
+			.when("/", {
 				templateUrl: "Index.html",
 				controller: "HomeController"
 			})
@@ -20,7 +20,10 @@
 				templateUrl: "Login.html",
 				controller: "LoginController"
 			})
-			.otherwise({redirectTo: "/404"})
+			.otherwise({
+				redirectTo: "/404",
+				templateUrl: "404.html"
+			})
 	});
 
 	app.config(function($authProvider) {
