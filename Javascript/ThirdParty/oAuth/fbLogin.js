@@ -42,6 +42,8 @@ function displayUser(user) {
     else {
         alert('user error');
     }
+
+    hideShowLogin(user);
 }
 
 
