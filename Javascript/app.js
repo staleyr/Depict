@@ -16,13 +16,12 @@
 	});
 	
 	function hideShowLogin(user) {
-  		if (user != null && user.id != null && user.id != "undefined")
-  		{
+  		if (user != null && user.id != null && user.id != "undefined") {
     		$(".loginDiv").hide();
- 		 }
-	  else {
-	    $(".loginDiv").show();
-	  }
+ 		}
+	  	else {
+	    	$(".loginDiv").show();
+	  	}
 }
 	 
 }());
