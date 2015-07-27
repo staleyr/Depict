@@ -20,7 +20,7 @@
 				templateUrl: "Login.html",
 				controller: "LoginController"
 			})
-			.otherwise({redirectTo: "/Index"})
+			.otherwise({redirectTo: "/404"})
 	});
 
 	app.config(function($authProvider) {
