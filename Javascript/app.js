@@ -22,7 +22,7 @@
 	app.config(function($authProvider) {
 
     $authProvider.facebook({
-      clientId: '624059410963642'
+      clientId: '1627409010845174'
     });
 
     $authProvider.google({
