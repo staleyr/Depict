@@ -12,6 +12,10 @@
 				templateUrl: "Category.html",
 				controller: "CategoryController"
 			})
+			.when("/Login", {
+				templateUrl: "Login.html",
+				controller: "LoginController"
+			})
 			.otherwise({redirectTo: "/Index"})
 	});
 

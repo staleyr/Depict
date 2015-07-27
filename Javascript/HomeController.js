@@ -1,7 +1,7 @@
 angular.module('depict')
   .controller('HomeController', function($scope, $location) {
 
-    function login() {
+    $scope.login = function () {
       $location.path("/Login");
     }
 
