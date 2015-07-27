@@ -16,11 +16,7 @@
 				templateUrl: "Login.html",
 				controller: "LoginController"
 			})
-			.otherwise({
-				redirectTo: "/Index",
-				templateUrl: "Index.html",
-				controller: "HomeController"
-			})
+			.otherwise({redirectTo: "/Index"})
 	});
 
 	app.config(function($authProvider) {
