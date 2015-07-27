@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="depict">
+	<head>
+		<title>Depict</title>
+
+		<!-- Scripts Start -->
+
+			<!-- Javascript Start -->
+				<script src="../Javascript/ThirdParty/angular.min.js"></script>
+				<script src="../Javascript/ThirdParty/jquery-2.1.4.min.js"></script>
+				<script src="../Javascript/ThirdParty/angular-route.min.js"></script>
+				<script src="../Javascript/app.js"></script>
+				<script src="../Javascript/CategoryController.js"></script>
+				<script src="../Javascript/CategoriesController.js"></script>
+
+				<script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+			    <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+			    <script type="text/javascript" src="http://yui.yahooapis.com/3.3.0/build/yui/yui-min.js"></script>
+			    <script src="../Javascript/ThirdParty/oAuth/cookie.js"></script>
+			    <script src="../Javascript/ThirdParty/oAuth/twitterLogin.js"></script>
+			    <script src="../Javascript/ThirdParty/oAuth/googleLogin.js"></script>
+			    <script src="../Javascript/ThirdParty/oAuth/fbLogin.js"></script>
+			<!-- Javascript End -->
+
+			<!-- CSS Start -->
+				<link rel="stylesheet" type="text/css" href="../CSS/Index.css">
+			<!-- CSS End -->
+
+		<!-- Scripts End -->
+	</head>
+	<body>
+		
+		<ul>
+        	<li><a href="Index">Home</a></li>
+  			<li><a href="Categories">Categories</a></li>
+  			<li><a href="#">Top Chart</a></li>
+      	</ul>
+
+		<h1>Depict</h1>
+
+		<div class="loginDiv">
+        <div id="fbLogin" onclick="">Facebook</div>
+        <div id="twitterlogin">Twitter</div>
+        <div id="googlelogin">Google</div>
+
+    	<p style="clear:both;" id="userinfo"></p>
+		
+		<!-- Placeholder for views -->
+		<div ng-view></div>
+		
+		<ul>
+        	<li><a href="Index">About Us</a></li>
+  			<li><a href="Categories">Contact Us</a></li>
+      	</ul>
+		
+	</body>
+</html>
