@@ -4,6 +4,10 @@
 
 	app.config(function($routeProvider) {
 		$routeProvider
+			.when("/Index", {
+				templateUrl: "Index.html",
+				controller: "HomeController"
+			})
 			.when("/Categories", {
 				templateUrl: "Categories.html",
 				controller: "CategoriesController"
