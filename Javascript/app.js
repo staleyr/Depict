@@ -18,7 +18,7 @@
 			})
 			.otherwise({
 				redirectTo: "/Index",
-				templateUrl: "404.html",
+				templateUrl: "Index.html",
 				controller: "HomeController"
 			})
 	});
