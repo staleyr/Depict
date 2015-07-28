@@ -1,9 +1,13 @@
 (function () {
 
-	var app = angular.module('depict', ["ngRoute", "satellizer"]);
+	var app = angular.module('depict', ["ngRoute", "satellizer", 'ngResource', 'ngMessages', 'ui.router', 'mgcrea.ngStrap']);
 
 	app.config(function($routeProvider) {
 		$routeProvider
+      .when("/", {
+  				templateUrl: "Index.html",
+  				controller: "HomeController"
+  			})
 			.when("/Categories", {
 				templateUrl: "Categories.html",
 				controller: "CategoriesController"
@@ -16,7 +20,7 @@
 				templateUrl: "Login.html",
 				controller: "LoginController"
 			})
-			.otherwise({redirectTo: "/Index"})
+			.otherwise("/")
 	});
 
 	app.config(function($authProvider) {
