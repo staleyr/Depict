@@ -16,18 +16,13 @@
 				templateUrl: "Login.html",
 				controller: "LoginController"
 			})
-      .when("/auth/facebook", {
-				templateUrl: "Login.html",
-				controller: "LoginController"
-			})
 			.otherwise({redirectTo: "/Index"})
 	});
 
 	app.config(function($authProvider) {
 
     $authProvider.facebook({
-      clientId: '1627409010845174',
-			url: "/Javascript/ThirdParty/Satellizer/auth/facebook"
+      clientId: '1627409010845174'
     });
 
     $authProvider.google({
