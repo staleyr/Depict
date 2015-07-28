@@ -16,6 +16,10 @@
 				templateUrl: "Login.html",
 				controller: "LoginController"
 			})
+      .when("/auth/facebook", {
+				templateUrl: "Login.html",
+				controller: "LoginController"
+			})
 			.otherwise({redirectTo: "/Index"})
 	});
 
