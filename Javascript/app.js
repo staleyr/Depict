@@ -42,7 +42,7 @@
     });
 
     $authProvider.live({
-      clientId: '000000004C12E68D'
+      clientId: '000000004015E185'
     });
 
     $authProvider.twitter({
