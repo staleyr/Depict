@@ -22,7 +22,7 @@
 	app.config(function($authProvider) {
 
     $authProvider.facebook({
-      clientId: '1627409010845174'
+      clientId: '1627409010845174',
 			url: "/Javascript/ThirdParty/Satellizer/auth/facebook"
     });
 
