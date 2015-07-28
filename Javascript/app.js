@@ -23,6 +23,7 @@
 
     $authProvider.facebook({
       clientId: '1627409010845174'
+			url: "/Javascript/ThirdParty/Satellizer/auth/facebook"
     });
 
     $authProvider.google({
