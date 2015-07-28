@@ -4,7 +4,7 @@ angular.module('depict')
     $scope.authenticate = function(provider) {
       $auth.authenticate(provider)
         .then(function() {
-          alert({
+          $alert({
             content: 'You have successfully logged in',
             animation: 'fadeZoomFadeDown',
             type: 'material',
@@ -12,7 +12,7 @@ angular.module('depict')
           });
         })
         .catch(function(response) {
-          alert({
+          $alert({
             content: response.data ? response.data.message : response,
             animation: 'fadeZoomFadeDown',
             type: 'material',
